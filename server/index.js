@@ -11,7 +11,7 @@ let Todo =require('./todomodel');
 
 app.use(cors());
 app.use(bodyParser.json());
-mongoose.connect('mongodb://127.0.0.1:27017/todos',{useNewUrlParser:true});
+mongoose.connect('mongodb+srv://sanjay:test@cluster0.q3zi1ad.mongodb.net/?retryWrites=true&w=majority');
 const connection = mongoose.connection;
 
 connection.once('open',()=>{
